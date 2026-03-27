@@ -8,14 +8,14 @@
         .container { background: white; max-width: 400px; margin: auto; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
         input { padding: 10px; width: 80%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; }
         button { padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
-        #message-area { margin-top: 20px; font-weight: bold; color: #333; line-height: 1.6; white-space: pre-wrap; }
+        #message-area { margin-top: 20px; font-weight: bold; color: #333; line-height: 1.6; white-space: pre-wrap; text-align: left; padding: 0 10px;}
     </style>
 </head>
 <body>
 
 <div class="container">
     <h2>Secret Message</h2>
-    <p>合言葉（パスワード）を入力してね</p>
+    <p>ニックネーム（ひらがな）を入力してね</p>
     <input type="text" id="pw" placeholder="例：tanaka123">
     <br>
     <button onclick="checkPassword()">メッセージを見る</button>
@@ -25,9 +25,19 @@
 <script>
     // ここに「パスワード」と「メッセージ」のペアを人数分書く
     const data = {
-        "tanaka": "田中さんへ\n2年間ありがとうございました！\nいつも助けてくれて本当に感謝しています。",
-        "sato": "佐藤さんへ\nお疲れ様でした！\nあの時のアドバイス、今の研究でも活きています。",
-        "suzuki": "鈴木さんへ\n短い間でしたが楽しかったです！\n社会人になっても頑張ります。"
+        "うっちー": 
+        "　本当に君たちの学年にどれほど救われたか。うっちーが一人いないだけでこの校舎は全く違うものになってたと思う！\n　常に自分の考えを持っていて、周りが見えていて、校舎のために行動ができて、後輩だけど森塾の中では本当に頼りにしてたよ！\n　真面目なやつかと思いきや身内では変人キャラで、周りを笑顔にする姿にお笑い芸人魂を感じました笑\n　あと一年、戸塚東口校を頼みます。そして、未来へのバトンをつないでいって下さい！\n",
+        "コータス": 
+        "　プライベートのコータスはもう本当に変なやつで、口で焼き鳥の串を外した時から同じ卓で食べないことを決めました。\n　でも校舎ではまさにみんなのお手本で、授業の質やメンターの的確さ、校舎の数字に貢献しようとする姿はまさに理想のイエローだったよ！\n　君の武器はなんと言ってもその素直さだと思う！人の言葉や意志をちゃんと汲み取って、周りに発信する事ができて、コータスの影響力は本当に大きかった！これからも常に向上心を持って頑張れ！\n",
+        "テスト": 
+        "はーちゃん大好き！！\n",
+
+
+
+
+
+
+
     };
 
     function checkPassword() {
